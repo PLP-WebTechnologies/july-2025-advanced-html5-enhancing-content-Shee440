@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Web Page </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        video, audio {
+            width: 100%;
+            border-radius: 5px;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 15px;
+        }
+        .inline-label {
+            display: inline;
+            font-weight: normal;
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comprehensive Web Page </h1>
+        <p>Showcasing HTML5 elements and form validation</p>
+    </header>
+
+    <section id="lists">
+        <h2>Lists Section</h2>
+        
+        <article>
+            <h3>Unordered List - Popular Programming Languages</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>PHP</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h3>Ordered List - Web Development </h3>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Frontend Framework (React, Vue, Angular)</li>
+            </ol>
+        </article>
+        
+        <article>
+            <h3>Description List - Web Technologies</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - the structure of web pages</dd>
+                
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - the presentation of web pages</dd>
+                
+                <dt>JavaScript</dt>
+                <dd>The programming language of the web</dd>
+            </dl>
+        </article>
+    </section>
+
+    <section id="tables">
+        <h2>Tables Section</h2>
+        
+        <table>
+            <caption>Monthly Website Traffic</caption>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Visitors</th>
+                    <th>Page Views</th>
+                    <th>Bounce Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>January</td>
+                    <td>12,345</td>
+                    <td>45,678</td>
+                    <td>32%</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>13,456</td>
+                    <td>48,901</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>14,567</td>
+                    <td>52,345</td>
+                    <td>28%</td>
+                </tr>
+                <tr>
+                    <td>April</td>
+                    <td>15,678</td>
+                    <td>56,789</td>
+                    <td>26%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>56,046</th>
+                    <th>203,713</th>
+                    <th>29%</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>Media Section</h2>
+        
+        <article>
+            <h3>Image </h3>
+            <figure>
+
+                <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Placeholder image">
+                
+                <figcaption>Web development responsiveness</figcaption>
+            </figure>
+        </article>
+        
+        <article>
+    <h3>Video Example</h3>
+    <video width="500" height="300" controls autoplay loop muted poster="https://via.placeholder.com/500x300?text=Video+Preview">
+        <source src="https://videos.pexels.com/video-files/3251896/3251896-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>An example of an HTML5 video element with enhanced controls.</p>
+</article>
+
+<article>
+    <h3>Audio Example</h3>
+    <audio controls autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p>An example of an HTML5 audio element with enhanced controls.</p>
+</article>
+
+    </section>
+
+    <section id="form">
+        <h2>HTML5 Form with Validation</h2>
+        
+        <form id="registration" method="post" novalidate>
+            <fieldset>
+                <legend><span class="required">Personal Information</span></legend>
+                
+                <label for="fullname" class="required">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+                
+                <label for="email" class="required">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                <small>Format: 123-456-7890</small>
+                
+                <label for="dob" class="required">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required max="2005-12-31">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <label for="username" class="required">Username</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="20" pattern="[a-zA-Z0-9]+" placeholder="4-20 characters, letters and numbers only">
+                
+                <label for="password" class="required">Password</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Minimum 8 characters">
+                
+                <label for="confirm-password" class="required">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-enter your password">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <div class="checkbox-group">
+                    <label>Which topics interest you? (Select all that apply)</label>
+                    <div>
+                        <input type="checkbox" id="web-dev" name="interests" value="web-dev">
+                        <label for="web-dev" class="inline-label">Web Development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="data-science" name="interests" value="data-science">
+                        <label for="data-science" class="inline-label">Data Science</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mobile-dev" name="interests" value="mobile-dev">
+                        <label for="mobile-dev" class="inline-label">Mobile Development</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ai" name="interests" value="ai">
+                        <label for="ai" class="inline-label">Artificial Intelligence</label>
+                    </div>
+                </div>
+                
+                <div class="radio-group">
+                    <label>How did you hear about us?</label>
+                    <div>
+                        <input type="radio" id="social-media" name="referral" value="social-media">
+                        <label for="social-media" class="inline-label">Social Media</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="friend" name="referral" value="friend">
+                        <label for="friend" class="inline-label">Friend or Colleague</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="search" name="referral" value="search">
+                        <label for="search" class="inline-label">Search Engine</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="referral" value="other">
+                        <label for="other" class="inline-label">Other</label>
+                    </div>
+                </div>
+                
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself"></textarea>
+                
+                <label for="website">Website (optional)</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Newsletter</legend>
+                <div>
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    <label for="subscribe" class="inline-label">Subscribe to our newsletter</label>
+                </div>
+                
+                <label for="frequency">Email Frequency</label>
+                <select id="frequency" name="frequency">
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly" selected>Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                </select>
+            </fieldset>
+            
+            <div>
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 All rights reserved.</p>
+    </footer>
+</body>
+</html>
